@@ -1,0 +1,66 @@
+// import the CSS framework
+@import "bootstrap";
+
+//Navbar
+
+// Remove thin white line that screws with the image
+.navbar {
+  border-bottom: none;
+}
+
+.navbar-nav {
+  padding-left: 3em;
+}
+
+
+// Headings
+
+// Remove margin that screw with the images
+h1.no-margin {
+  margin-top: 0px;
+}
+
+// Images
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+  }
+
+// Navbar
+// Make it transparent
+.navbar-transparent {
+    background:transparent;
+}
+
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+  }
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create your own classes
+// to make views framework-neutral
+.column {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.form {
+  @extend .col-md-6;
+  }
+.form-centered {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  }
+// apply styles to HTML elements
+// to make views framework-neutral
+
+section {
+  @extend .row;
+  margin-top: 20px;
+  }

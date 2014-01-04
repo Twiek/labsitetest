@@ -1,0 +1,27 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.background-image {
+  background: url('berlin-blur.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+}
+
+.cleaner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.welcome-form {
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #aac571;
+  max-width: 22em;
+}

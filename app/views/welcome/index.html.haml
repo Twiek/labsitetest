@@ -1,0 +1,29 @@
+.background-image
+  .row
+    .cleaner
+      .col-lg-6.hidden-xs
+        = image_tag("cleaner.png")
+      .col-lg-6
+        .welcome-form
+          %h1
+            Jetzt putzen lassen!
+          %ul
+            %li
+              %h4
+                Guter Grund 1!
+            %li
+              %h4
+                Guter Grund 2!
+            %li
+              %h4
+                Guter Grund 3!
+            %li
+              %h4
+                Guter Grund 4!
+
+          %form.form-inline{role: "form"}
+            .form-group
+              %label.sr-only{for: "exampleInputEmail1"} Postleitzahl eingeben
+              %input#exampleInputEmail1.form-control{placeholder: "Postleitzahl eingeben"}/
+            %button.btn.btn-default{type: "submit"} abschicken
+
