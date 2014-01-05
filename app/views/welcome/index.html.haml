@@ -1,29 +1,91 @@
 .background-image
-  .row
-    .welcome-elements
-      .col-md-6.hidden-xs.hidden-sm.cleaner
-        = image_tag("cleaner.png")
-      .col-md-5.col-md-offset-1.welcome-teaser
-        .welcome-form
-          %h1
-            Jetzt putzen lassen!
-          %ul
-            %li
-              %h4
-                Guter Grund 1!
-            %li
-              %h4
-                Guter Grund 2!
-            %li
-              %h4
-                Guter Grund 3!
-            %li
-              %h4
-                Guter Grund 4!
+  .container.container-full-size
+    .row
+      .welcome-elements
+        .col-md-6.hidden-xs.hidden-sm.cleaner
+          = image_tag("cleaner.png")
+        .col-md-6.welcome-teaser
+          .welcome-form
+            %h1
+              Jetzt putzen lassen!
+            %ul
+              %li
+                %h4
+                  Guter Grund 1!
+              %li
+                %h4
+                  Guter Grund 2!
+              %li
+                %h4
+                  Guter Grund 3!
+              %li
+                %h4
+                  Guter Grund 4!
 
-          %form.form-inline{role: "form"}
-            .form-group
-              %label.sr-only{for: "exampleInputEmail1"} Postleitzahl eingeben
-              %input.input-lg#exampleInputEmail1.form-control{placeholder: "Postleitzahl eingeben"}/
-            %button.btn.btn-lg.btn-primary{type: "submit"} Abschicken
+            %form.form-inline{role: "form"}
+              .form-group
+                %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
+                %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
+              %button.submit{type: "submit"}
+                Termine prüfen
+                %br
+                %h6.button-double-line
+                  In 60 Sekunden buchen
 
+.welcome-benefits
+  .container.container-full-size
+    .row
+      .col-lg-3
+        .img
+          = image_tag('gluecklich.png')
+        %h3.benefits-heading
+          Einfach
+        .benefits-description
+          Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage
+      .col-lg-3
+        .img
+          = image_tag('sicher.png')
+        %h3.benefits-heading
+          Sicher
+        .benefits-description
+          Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage
+      .col-lg-3
+        .img
+          = image_tag('reinigungsmittel.png')
+        %h3.benefits-heading
+          Bequem
+        .benefits-description
+          Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage
+      .col-lg-3
+        .img
+          = image_tag('euro.png')
+        %h3.benefits-heading
+          Preiswert
+        .benefits-description
+          Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage
+
+.welcome-cleaning
+  .container
+    %h2.align-center
+      Wir putzen gründlich
+    .row
+      .col-lg-6
+        .img
+          = image_tag('putzkraefte.png')
+      .col-lg-6.cleaning-description
+        Unsere Reinigungkräfte befolgen sind mit einer Checkliste mit über 50
+        Punken ausgestattet um sicher zu gehen, dass nichts vergessen wird und
+        Sie stets zufrieden sind. Unter anderem saugen und wischen wir alle
+        Böden, reinigen Waschbecken, Duschen und Badewannen, bringen den Müll
+        raus und sind insgesamt ziemlich toll!
+    .welcome-submit
+      .jumbotron.jumbotron-submit.align-center
+        %form.form-inline{role: "form"}
+          .form-group
+            %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
+            %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
+          %button.submit{type: "submit"}
+            Termine prüfen
+            %br
+            %h6.button-double-line
+              In 60 Sekunden buchen

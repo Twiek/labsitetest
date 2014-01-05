@@ -1,23 +1,89 @@
 // import the CSS framework
 @import "bootstrap";
 
-//Navbar
+// import Font Awesome
+@import "font-awesome";
 
+
+//Font & Text
+// Increase general font size
+body {
+  font-size: 2em;
+}
+
+.align-center {
+  text-align: center;
+}
+
+
+// Container
+// Full width container
+.container-full-size {
+  width: 100%;
+}
+
+
+// Navbar
 // Remove thin white line that screws with the image
 .navbar {
   border-bottom: none;
 }
 
+// Make sure the elements are not to close to the logo
 .navbar-nav {
   padding-left: 3em;
 }
 
+// Make it transparent
+.navbar-transparent {
+    background:transparent;
+}
+
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+}
+
 
 // Headings
-
 // Remove margin that screw with the images
 h1.no-margin {
   margin-top: 0px;
+}
+
+
+// Input
+.input-xlg {
+  height: 58px;
+  padding: 10px 16px;
+  font-size: 1.2em;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.input-zip {
+  width: 8em;
+}
+
+
+// Buttons
+// For buttons with 2 line
+.button-double-line {
+  font-weight: normal;
+  margin: 0;
+}
+
+.button-double-line {
+  font-weight: normal;
+  margin: 0;
+}
+
+
+// Jumbotron
+// Make the top padding smaller for the welcome page
+.jumbotron-submit {
+  padding: 1em 0em 1em 0em !important;
+  max-width: 22em;
 }
 
 // Images
@@ -27,16 +93,6 @@ img {
   margin: 0 auto;
   }
 
-// Navbar
-// Make it transparent
-.navbar-transparent {
-    background:transparent;
-}
-
-// override for the 'Home' navigation link
-.navbar-brand {
-  font-size: inherit;
-  }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -45,18 +101,24 @@ img {
   @extend .col-md-6;
   @extend .text-center;
   }
+
+
+ // Form & Submit
 .form {
   @extend .col-md-6;
-  }
+}
+
 .form-centered {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
+
+
 .submit {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-  }
+}
 // apply styles to HTML elements
 // to make views framework-neutral
 
