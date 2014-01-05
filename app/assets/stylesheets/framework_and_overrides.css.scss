@@ -15,11 +15,16 @@ body {
   text-align: center;
 }
 
+.header-bottom-padding {
+  padding-bottom: 1em;
+}
+
 
 // Container
 // Full width container
 .container-full-size {
   width: 100%;
+  padding: 0 15px;
 }
 
 
@@ -92,6 +97,23 @@ img {
   @extend .img-responsive;
   margin: 0 auto;
   }
+
+// Google Maps
+// To make them responsive (see: http://www.labnol.org/internet/embed-responsive-google-maps/28333/)
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
 
 
 // THESE ARE EXAMPLES YOU CAN MODIFY

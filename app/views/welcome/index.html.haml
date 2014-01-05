@@ -32,52 +32,146 @@
                 %h6.button-double-line
                   In 60 Sekunden buchen
 
-.welcome-benefits
+.welcome-4c
   .container.container-full-size
     .row
       .col-lg-3
-        .img
+        .benefits-img
           = image_tag('gluecklich.png')
-        %h3.benefits-heading
+        %h3.heading-4c
           Einfach
-        .benefits-description
-          Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage
+        .description-4c
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
       .col-lg-3
-        .img
+        .benefits-img
           = image_tag('sicher.png')
-        %h3.benefits-heading
+        %h3.heading-4c
           Sicher
-        .benefits-description
-          Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage
+        .description-4c
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
       .col-lg-3
-        .img
+        .benefits-img
           = image_tag('reinigungsmittel.png')
-        %h3.benefits-heading
+        %h3.heading-4c
           Bequem
-        .benefits-description
-          Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage
+        .description-4c
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
       .col-lg-3
-        .img
+        .benefits-img
           = image_tag('euro.png')
-        %h3.benefits-heading
+        %h3.heading-4c
           Preiswert
-        .benefits-description
-          Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage
+        .description-4c
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
+    .welcome-submit
+      .submit-green.jumbotron.jumbotron-submit.align-center
+        %form.form-inline{role: "form"}
+          .form-group
+            %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
+            %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
+          %button.submit{type: "submit"}
+            Termine prüfen
+            %br
+            %h6.button-double-line
+              In 60 Sekunden buchen
 
-.welcome-cleaning
+
+.welcome-2c
   .container
-    %h2.align-center
+    %h1.align-center
       Wir putzen gründlich
     .row
       .col-lg-6
-        .img
-          = image_tag('putzkraefte.png')
-      .col-lg-6.cleaning-description
+        = image_tag('putzkraefte.png')
+      .col-lg-6.description-2c
         Unsere Reinigungkräfte befolgen sind mit einer Checkliste mit über 50
         Punken ausgestattet um sicher zu gehen, dass nichts vergessen wird und
         Sie stets zufrieden sind. Unter anderem saugen und wischen wir alle
         Böden, reinigen Waschbecken, Duschen und Badewannen, bringen den Müll
         raus und sind insgesamt ziemlich toll!
+    .welcome-submit
+      .jumbotron.jumbotron-submit.align-center
+        %form.form-inline{role: "form"}
+          .form-group
+            %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
+            %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
+          %button.submit{type: "submit"}
+            Termine prüfen
+            %br
+            %h6.button-double-line
+              In 60 Sekunden buchen
+
+.welcome-4c.welcome-team
+  .container.container-full-size
+    %h1.align-center.header-bottom-padding
+      Team
+    .row
+      .col-lg-3
+        .img-circle
+          = image_tag('this_could_be_you.jpg', class: "img-circle")
+        %h3.heading-4c
+          CEO
+        .description-4c
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
+      .col-lg-3
+        .img-circle
+          .img-circle
+            = image_tag('this_could_be_you.jpg', class: "img-circle")
+        %h3.heading-4c
+          CFO
+        .description-4c
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
+      .col-lg-3
+        .img-circle
+          .img-circle
+            = image_tag('this_could_be_you.jpg', class: "img-circle")
+        %h3.heading-4c
+          CMO
+        .description-4c
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
+      .col-lg-3
+        .img-circle
+          = image_tag('sebastian_schwiecker.jpg' , class: "img-circle")
+        %h3.heading-4c
+          CTO (Gott bewahre...)
+        .description-4c
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
+    .welcome-submit
+      .submit-green.jumbotron.jumbotron-submit.align-center
+        %form.form-inline{role: "form"}
+          .form-group
+            %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
+            %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
+          %button.submit{type: "submit"}
+            Termine prüfen
+            %br
+            %h6.button-double-line
+              In 60 Sekunden buchen
+
+
+.welcome-2c
+  .container
+    %h1.align-center.header-bottom-padding
+      Kontakt
+    .row
+      .col-lg-6
+        .google-maps
+          <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x47a85063ebd5027b%3A0x15ee2ba2a23306d0!2sBruchsaler+Stra%C3%9Fe+4%2C+10715+Berlin%2C+Deutschland!5e0!3m2!1sde!2s!4v1388945747112" width="300" height="300" frameborder="0" style="border:0"></iframe>
+      .col-lg-6.description-2c
+        %h3
+          Anschrift:
+        %p
+          Bruchsaler Straße 4
+          10715 Berlin
+        %h3
+          Telefon:
+        %p
+          (030) 123 123 123
+        %h3
+          Email:
+        %p
+          %a{href: "mailto:testphase@putzen.in?Subject=Ich%20will%20mitmachen", target: "_top"}
+            testphase@putzen.in
     .welcome-submit
       .jumbotron.jumbotron-submit.align-center
         %form.form-inline{role: "form"}

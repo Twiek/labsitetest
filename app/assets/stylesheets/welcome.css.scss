@@ -42,28 +42,27 @@
   }
 }
 
-.welcome-benefits {
-  padding-left: 15px;
+.welcome-4c {
   padding-right: 2em;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-bottom: 1em;
-  .img {
+  .benefits-img {
     opacity:0.8;
   }
-  .benefits-heading {
+  .heading-4c {
     text-align: center;
     padding-top: .5em;
   }
-  .benefits-description {
+  .description-4c {
     padding: 0 1em 1em 1em;
     text-align: justify;
   }
 }
 
-.welcome-cleaning {
+.welcome-2c {
   background-color: #aac571;
-  padding-bottom: 1em;
-  .cleaning-description {
+  padding: 1em 0 1em 0;
+  .description-2c {
     padding: 1em 10% 0 5%;
     text-align: justify;
   }
@@ -74,4 +73,16 @@
   margin-left:auto;
   margin-right:auto;
   padding-top: 2em;
+  .submit-green.jumbotron {
+    background-color: #aac571;
+  }
 }
+
+.welcome-about {
+  padding: 2em 2em 1em 0;
+}
+
+.welcome-team {
+  padding: 1em 0 2em 0;
+}
+
