@@ -52,7 +52,12 @@ body {
 
 // Make it transparent
 .navbar-transparent {
-    background:transparent;
+  background:transparent;
+  // to make sure there is no white background (why does it work this way?)
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 
 // override for the 'Home' navigation link
