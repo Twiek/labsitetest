@@ -143,6 +143,12 @@ body {
 }
 
 // Add phone support for smaller screens
+.phone-support-header {
+  background-color: #aac571;
+  padding: .5em 0 .5em 0;
+}
+
+// Hide phone support for larger screens
 @media (min-width: 768px) {
   .phone-support-header {
     display: none;
