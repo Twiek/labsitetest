@@ -65,6 +65,36 @@ body {
   font-size: inherit;
 }
 
+// Insert the navbar images/links via classes
+.offers-price-image {
+  content:url(angebote_preise.png);
+   &:hover {
+    content:url(angebote_preise_hover.png);
+  }
+}
+
+.quality-image {
+  content:url(qualitaet.png);
+   &:hover {
+    content:url(qualitaet_hover.png);
+  }
+}
+
+.team-image {
+  content:url(team.png);
+   &:hover {
+    content:url(team_hover.png);
+  }
+}
+
+.contact-image {
+  content:url(kontakt.png);
+   &:hover {
+    content:url(kontakt_hover.png);
+  }
+}
+
+
 // Make the navbar collapse 'earlier'
 // See: http://stackoverflow.com/a/20249415/409087
 @media (max-width: 991px) {
