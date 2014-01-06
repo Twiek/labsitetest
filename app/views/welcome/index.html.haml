@@ -25,7 +25,7 @@
             %form.form-inline{role: "form"}
               .form-group
                 %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-                %input.input-xlg.input-zip.input-center.form-control{placeholder: "Postleitzahl"}/
+                %input.input-xlg.input-zip.input-center.form-control{autofocus: "", placeholder: "Postleitzahl", type: "tel"}/
               .form-group.button-center
                 // .form-group is somehow necessary in order for the button to be repsonsive
                 %button.submit{type: "submit"}
@@ -70,7 +70,9 @@
         %form.form-inline{role: "form"}
           .form-group
             %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl"}/
+            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
+            / used type: "tel" to not show the number picker on desktio but still
+            / make sure the numerical keyboard is triggered on mobile
           %button.submit{type: "submit"}
             Termine prüfen
             %br
@@ -96,7 +98,7 @@
           %form.form-inline{role: "form"}
             .form-group
               %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-              %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl"}/
+              %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
             %button.submit{type: "submit"}
               Termine prüfen
               %br
@@ -143,7 +145,7 @@
         %form.form-inline{role: "form"}
           .form-group
             %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl"}/
+            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
           %button.submit{type: "submit"}
             Termine prüfen
             %br
@@ -180,7 +182,7 @@
           %form.form-inline{role: "form"}
             .form-group
               %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-              %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl"}/
+              %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
             %button.submit{type: "submit"}
               Termine prüfen
               %br
@@ -265,7 +267,7 @@
         %form.form-inline{role: "form"}
           .form-group
             %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl"}/
+            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
           %button.submit{type: "submit"}
             Termine prüfen
             %br
