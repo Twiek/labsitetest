@@ -21,14 +21,7 @@ group :test do
 end
 
 group :assets do
-  gem 'sass-rails', '>= 3.2'
-  gem 'bootstrap-sass', '~> 3.0.3.0'
-  gem 'haml'
-  gem "haml-rails"
-  gem 'jquery-rails'
-  gem 'coffee-rails'
-  gem "font-awesome-rails"
-  gem 'uglifier'
+
 end
 
 group :production do
@@ -37,4 +30,13 @@ group :production do
 end
 
 ruby '1.9.3'
+
+gem 'sass-rails', '>= 3.2'
+gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'haml'
+gem "haml-rails"
+gem 'jquery-rails'
+gem 'coffee-rails'
+gem "font-awesome-rails"
+gem 'uglifier'
 
