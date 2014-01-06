@@ -1,6 +1,7 @@
 // import the CSS framework
 @import "bootstrap";
 
+
 // import Font Awesome
 @import "font-awesome";
 
@@ -138,6 +139,15 @@ body {
   .navbar-nav>li>a {
       padding-top: 10px;
       padding-bottom: 10px;
+  }
+}
+
+// Add phone support for smaller screens
+@media (min-width: 768px) {
+  .phone-support-header {
+    display: none;
+    // Why does @extend .text-center; not work here but must be added extra in
+    // _navigation.html.haml?
   }
 }
 
