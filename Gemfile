@@ -12,6 +12,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'debugger'
   gem 'rails_layout'
+   gem 'sqlite3'
 end
 
 group :test do
@@ -22,7 +23,6 @@ end
 group :assets do
   gem 'sass-rails', '>= 3.2'
   gem 'bootstrap-sass', '~> 3.0.3.0'
-  gem 'sqlite3'
   gem 'haml'
   gem "haml-rails"
   gem 'jquery-rails'
@@ -30,4 +30,11 @@ group :assets do
   gem "font-awesome-rails"
   gem 'uglifier'
 end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'pg', '0.12.2'
+end
+
+ruby '1.9.3'
 
