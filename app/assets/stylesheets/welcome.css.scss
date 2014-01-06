@@ -35,12 +35,16 @@
 
 @media (max-width: 768px) {
   .welcome-teaser {
-    padding: 0 15% 20% 15%;
+    padding: 0% 15% 15% 15%;
   }
-  .input-zip {
+  .input-center {
     margin: 0 auto;
   }
+  .button-center {
+    text-align: center;
+  }
 }
+
 
 .welcome-4c {
   padding-right: 2em;
@@ -60,12 +64,15 @@
 }
 
 .welcome-2c {
-  background-color: #aac571;
   padding: 1em 0 1em 0;
   .description-2c {
     padding: 1em 10% 0 5%;
     text-align: justify;
   }
+}
+
+.welcome-green {
+  background-color: #aac571;
 }
 
 .welcome-submit {
@@ -86,3 +93,8 @@
   padding: 1em 0 2em 0;
 }
 
+.welcome-footer {
+  padding: 1em 0 1em 0;
+  color: white;
+  background-color: #333333;
+}

@@ -25,12 +25,14 @@
             %form.form-inline{role: "form"}
               .form-group
                 %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-                %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
-              %button.submit{type: "submit"}
-                Termine prüfen
-                %br
-                %h6.button-double-line
-                  In 60 Sekunden buchen
+                %input.input-xlg.input-zip.input-center.form-control{placeholder: "Postleitzahl"}/
+              .form-group.button-center
+                // .form-group is somehow necessary in order for the button to be repsonsive
+                %button.submit{type: "submit"}
+                  Termine prüfen
+                  %br
+                  %h6.button-double-line
+                    In 60 Sekunden buchen
 
 .welcome-4c
   .container.container-full-size
@@ -74,32 +76,31 @@
             %br
             %h6.button-double-line
               In 60 Sekunden buchen
-
-
-.welcome-2c
-  .container
-    %h1.align-center
-      Wir putzen gründlich
-    .row
-      .col-lg-6
-        = image_tag('putzkraefte.png')
-      .col-lg-6.description-2c
-        Unsere Reinigungkräfte befolgen sind mit einer Checkliste mit über 50
-        Punken ausgestattet um sicher zu gehen, dass nichts vergessen wird und
-        Sie stets zufrieden sind. Unter anderem saugen und wischen wir alle
-        Böden, reinigen Waschbecken, Duschen und Badewannen, bringen den Müll
-        raus und sind insgesamt ziemlich toll!
-    .welcome-submit
-      .jumbotron.jumbotron-submit.align-center
-        %form.form-inline{role: "form"}
-          .form-group
-            %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-            %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
-          %button.submit{type: "submit"}
-            Termine prüfen
-            %br
-            %h6.button-double-line
-              In 60 Sekunden buchen
+.welcome-green
+  .welcome-2c
+    .container
+      %h1.align-center
+        Wir putzen gründlich
+      .row
+        .col-lg-6
+          = image_tag('putzkraefte.png')
+        .col-lg-6.description-2c
+          Unsere Reinigungkräfte befolgen sind mit einer Checkliste mit über 50
+          Punken ausgestattet um sicher zu gehen, dass nichts vergessen wird und
+          Sie stets zufrieden sind. Unter anderem saugen und wischen wir alle
+          Böden, reinigen Waschbecken, Duschen und Badewannen, bringen den Müll
+          raus und sind insgesamt ziemlich toll!
+      .welcome-submit
+        .jumbotron.jumbotron-submit.align-center
+          %form.form-inline{role: "form"}
+            .form-group
+              %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
+              %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
+            %button.submit{type: "submit"}
+              Termine prüfen
+              %br
+              %h6.button-double-line
+                In 60 Sekunden buchen
 
 .welcome-4c.welcome-team
   .container.container-full-size
@@ -150,28 +151,114 @@
 
 
 .welcome-2c
+  .welcome-green
+    .container
+      %h1.align-center.header-bottom-padding
+        Kontakt
+      .row
+        .col-lg-6
+          .google-maps
+            <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x47a85063ebd5027b%3A0x15ee2ba2a23306d0!2sBruchsaler+Stra%C3%9Fe+4%2C+10715+Berlin%2C+Deutschland!5e0!3m2!1sde!2s!4v1388945747112" width="300" height="300" frameborder="0" style="border:0"></iframe>
+        .col-lg-6.description-2c
+          %h3
+            Anschrift:
+          %p
+            Bruchsaler Straße 4
+            10715 Berlin
+          %h3
+            Telefon:
+          %p
+            (030) 123 123 123
+          %h3
+            Email:
+          %p
+            %a{href: "mailto:testphase@putzen.in?Subject=Ich%20will%20mitmachen", target: "_top"}
+              testphase@putzen.in
+      .welcome-submit
+        .jumbotron.jumbotron-submit.align-center
+          %form.form-inline{role: "form"}
+            .form-group
+              %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
+              %input.input-xlg.input-zip.form-control{placeholder: "Postleitzahl"}/
+            %button.submit{type: "submit"}
+              Termine prüfen
+              %br
+              %h6.button-double-line
+                In 60 Sekunden buchen
+
+.welcome-2c
   .container
-    %h1.align-center.header-bottom-padding
-      Kontakt
+    %h1.align-center
+      Wo wir tätig sind
     .row
-      .col-lg-6
-        .google-maps
-          <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x47a85063ebd5027b%3A0x15ee2ba2a23306d0!2sBruchsaler+Stra%C3%9Fe+4%2C+10715+Berlin%2C+Deutschland!5e0!3m2!1sde!2s!4v1388945747112" width="300" height="300" frameborder="0" style="border:0"></iframe>
-      .col-lg-6.description-2c
+      .col-lg-4.col-lg-offset-2
         %h3
-          Anschrift:
-        %p
-          Bruchsaler Straße 4
-          10715 Berlin
+          Berlin
+        %ul
+          %li
+            = link_to 'Berlin-Charlottenburg', root_path
+          %li
+            = link_to 'Berlin-Friedrichshain', root_path
+          %li
+            = link_to 'Berlin-Hellersdorf', root_path
+          %li
+            = link_to 'Berlin-Hohenschönhausen', root_path
+          %li
+            = link_to 'Berlin-Kreuzberg', root_path
+          %li
+            = link_to 'Berlin-Köpenick', root_path
+          %li
+            = link_to 'Berlin-Lichtenberg', root_path
+          %li
+            = link_to 'Berlin-Marzahn', root_path
+          %li
+            = link_to 'Berlin-Mitte', root_path
+          %li
+            = link_to 'Berlin-Neukölln', root_path
+          %li
+            = link_to 'Berlin-Pankow', root_path
+          %li
+            = link_to 'Berlin-Prenzlauer Berg', root_path
+          %li
+            = link_to 'Berlin-Reinickendorf', root_path
+          %li
+            = link_to 'Berlin-Schöneberg', root_path
+          %li
+            = link_to 'Berlin-Spandau', root_path
+          %li
+            = link_to 'Berlin-Steglitz', root_path
+          %li
+            = link_to 'Berlin-Tempelhof', root_path
+          %li
+            = link_to 'Berlin-Tiergarten', root_path
+          %li
+            = link_to 'Berlin-Treptow', root_path
+          %li
+            = link_to 'Berlin-Wedding', root_path
+          %li
+            = link_to 'Berlin-Weißensee', root_path
+          %li
+            = link_to 'Berlin-Wilmersdorf', root_path
+          %li
+            = link_to 'Berlin-Zehlendorf', root_path
+      .col-lg-4.col-lg-offset-2
         %h3
-          Telefon:
-        %p
-          (030) 123 123 123
-        %h3
-          Email:
-        %p
-          %a{href: "mailto:testphase@putzen.in?Subject=Ich%20will%20mitmachen", target: "_top"}
-            testphase@putzen.in
+          Hamburg
+        %ul
+          %li
+            = link_to 'Hamburg-Altona', root_path
+          %li
+            = link_to 'Hamburg-Bergedorf', root_path
+          %li
+            = link_to 'Hamburg-Eimsbüttel', root_path
+          %li
+            = link_to 'Hamburg-Mitte', root_path
+          %li
+            = link_to 'Hamburg-Nord', root_path
+          %li
+            = link_to 'Hamburg-Harburg', root_path
+          %li
+            = link_to 'Hamburg-Wandsbek', root_path
     .welcome-submit
       .jumbotron.jumbotron-submit.align-center
         %form.form-inline{role: "form"}
@@ -183,3 +270,24 @@
             %br
             %h6.button-double-line
               In 60 Sekunden buchen
+
+.welcome-footer.text-center
+  .footer-social
+    %a{class: "fa fa-facebook-square font-white"}
+    |
+    %a{class: "fa fa-google-plus-square font-white"}
+    |
+    %a{class: "fa fa-twitter-square font-white"}
+    |
+    %a{class: "fa fa-xing-square font-white"}
+    |
+    %a{class: "fa fa-youtube-square font-white"}
+
+  .footer-font
+    = link_to 'Jobs', root_path, {class: "font-white"}
+    |
+    = link_to 'Presse', root_path, {class: "font-white"}
+    |
+    = link_to 'Datenschutz', root_path, {class: "font-white"}
+    |
+    = link_to 'Impressum', root_path, {class: "font-white"}
