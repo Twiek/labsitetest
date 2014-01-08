@@ -22,10 +22,10 @@
                 %h4
                   Guter Grund 4!
 
-            %form.form-inline{role: "form"}
+            = form_tag new_search_path, class: "form-inline", role: "form", method: "get" do
               .form-group
-                %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-                %input.input-xlg.input-zip.input-center.form-control{autofocus: "", placeholder: "Postleitzahl", type: "tel"}/
+                = label_tag :q, "Postleitzahl", class: "sr-only"
+                = text_field_tag :searched_zip, nil, class: "input-xlg input-zip input-center form-control", autofocus: "", placeholder: "Postleitzahl", type: "tel"
               .form-group.button-center
                 // .form-group is somehow necessary in order for the button to be repsonsive
                 %button.submit{type: "submit"}

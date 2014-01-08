@@ -221,7 +221,6 @@ img {
 
 // Footer
 // Smaller Font
-
 .footer-font {
   font-size: 0.8em;
 }
@@ -229,6 +228,12 @@ img {
 .footer-social {
   font-size: 2.5em;
   padding: 0 0 1em 0;
+}
+
+// Flash Messages & Alerts
+// To make sure there is no white space below the alerts
+.alert {
+  margin-bottom: 0;
 }
 
 
