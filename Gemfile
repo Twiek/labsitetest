@@ -36,6 +36,7 @@ gem 'haml'
 gem "haml-rails"
 gem 'jquery-rails'
 gem 'coffee-rails'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'uglifier'
+gem 'friendly_id', '~> 4.0.10'
 

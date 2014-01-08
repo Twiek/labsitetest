@@ -1,3 +1,17 @@
-// Place all the styles related to the Areas controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.area-form {
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #aac571;
+  max-width: 28em;
+  padding: 1em 1em 1em 1em;
+}
+
+.area-text {
+  padding-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .input-email {
+    width: 8em !important;
+  }
+}

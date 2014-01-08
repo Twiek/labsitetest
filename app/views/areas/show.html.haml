@@ -1,1 +1,25 @@
-Hallo
+.background-image
+  .container.container-full-size
+    .row
+      .welcome-elements
+        .col-md-6.hidden-xs.hidden-sm.cleaner
+          = image_tag("cleaner.png")
+        .col-md-6.welcome-teaser
+          .area-form
+            .area-text
+              Leider sind wir noch nicht in
+              %b
+                = "#{@area.name}"
+              tätig. Wenn Sie uns Ihre E-Mail hinterlassen werden wir Ihnen eine einmalige Nachricht zukommen lassen sobald sich das ändert (kein Newsletter, kein Spam)
+
+            = form_tag new_search_path, class: "form-inline", role: "form", method: "get" do
+              .form-group
+                = label_tag :q, "Postleitzahl", class: "sr-only"
+                = text_field_tag :searched_zip, nil, class: "input-xlg input-email input-center form-control", autofocus: "", placeholder: "Ihre Email", type: "email"
+              .form-group.button-center
+                // .form-group is somehow necessary in order for the button to be repsonsive
+                %button.submit{type: "submit"}
+                  Nachricht erhalten
+                  %br
+                  %h6.button-double-line
+                    Kein Spam

@@ -3,7 +3,7 @@ Putzen::Application.routes.draw do
 
   root to: 'welcome#index'
 
-  resources :areas, only: [:show]
+  resources :areas, path: '', only: [:show]
 
   resources :searches, only: [:new]
 end
