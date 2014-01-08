@@ -6,11 +6,6 @@
     %title= content_for?(:title) ? yield(:title) : 'Putzen'
     / Shortcut Icon for Android
     %link{href: "shortcut_icon.png", rel: "shortcut icon", sizes: "196x196"}
-    / Shortcut Icons for  IOS
-    %link{ rel: 'apple-touch-icon', href: image_path('apple-touch-icon-57x57.png'), type: "image/png"  }
-    %link{ rel: 'apple-touch-icon', sizes: '72x72', href: image_path('apple-touch-icon-72x72.png'), type: "image/png"  }
-    %link{ rel: 'apple-touch-icon', sizes: '114x114', href: image_path('apple-touch-icon-114x114.png'), type: "image/png"  }
-    %link{ rel: 'apple-touch-icon', sizes: '144x144', href: image_path('apple-touch-icon-144x144.png'), type: "image/png"  }
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Putzen'}"}
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
