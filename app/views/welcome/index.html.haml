@@ -22,17 +22,7 @@
                 %h4
                   Guter Grund 4!
 
-            = form_tag new_search_path, class: "form-inline", role: "form", method: "get" do
-              .form-group
-                = label_tag :q, "Postleitzahl", class: "sr-only"
-                = text_field_tag :searched_zip, nil, class: "input-xlg input-zip input-center form-control", autofocus: "", placeholder: "Postleitzahl", type: "tel"
-              .form-group.button-center
-                // .form-group is somehow necessary in order for the button to be repsonsive
-                %button.submit{type: "submit"}
-                  Termine prüfen
-                  %br
-                  %h6.button-double-line
-                    In 60 Sekunden buchen
+            = render 'shared/zip_input'
 
 .welcome-4c#angebote-preise
   .container.container-full-size
@@ -67,17 +57,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
     .welcome-submit
       .submit-green.jumbotron.jumbotron-submit.align-center
-        %form.form-inline{role: "form"}
-          .form-group
-            %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
-            / used type: "tel" to not show the number picker on desktio but still
-            / make sure the numerical keyboard is triggered on mobile
-          %button.submit{type: "submit"}
-            Termine prüfen
-            %br
-            %h6.button-double-line
-              In 60 Sekunden buchen
+        = render 'shared/zip_input'
 
 .welcome-green#qualitaet
   .welcome-2c
@@ -95,15 +75,7 @@
           raus und sind insgesamt ziemlich toll!
       .welcome-submit
         .jumbotron.jumbotron-submit.align-center
-          %form.form-inline{role: "form"}
-            .form-group
-              %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-              %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
-            %button.submit{type: "submit"}
-              Termine prüfen
-              %br
-              %h6.button-double-line
-                In 60 Sekunden buchen
+          = render 'shared/zip_input'
 
 .welcome-4c.welcome-team#team
   .container.container-full-size
@@ -142,15 +114,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
     .welcome-submit
       .submit-green.jumbotron.jumbotron-submit.align-center
-        %form.form-inline{role: "form"}
-          .form-group
-            %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
-          %button.submit{type: "submit"}
-            Termine prüfen
-            %br
-            %h6.button-double-line
-              In 60 Sekunden buchen
+        = render 'shared/zip_input'
 
 
 .welcome-2c#kontakt
@@ -179,15 +143,7 @@
               testphase@putzen.in
       .welcome-submit
         .jumbotron.jumbotron-submit.align-center
-          %form.form-inline{role: "form"}
-            .form-group
-              %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-              %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
-            %button.submit{type: "submit"}
-              Termine prüfen
-              %br
-              %h6.button-double-line
-                In 60 Sekunden buchen
+          = render 'shared/zip_input'
 
 .welcome-2c
   .container
@@ -263,13 +219,5 @@
           %li
             = link_to 'Hamburg-Wandsbek', root_path
     .welcome-submit
-      .jumbotron.jumbotron-submit.align-center
-        %form.form-inline{role: "form"}
-          .form-group
-            %label.sr-only{for: "exampleInputEmail1"} Postleitzahl
-            %input.input-xlg.input-center.input-zip.form-control{placeholder: "Postleitzahl", type: "tel"}/
-          %button.submit{type: "submit"}
-            Termine prüfen
-            %br
-            %h6.button-double-line
-              In 60 Sekunden buchen
+      .submit-green.jumbotron.jumbotron-submit.align-center
+        = render 'shared/zip_input'
