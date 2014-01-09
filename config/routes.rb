@@ -1,4 +1,5 @@
 Putzen::Application.routes.draw do
+
   get "welcome/index"
 
   root to: 'welcome#index'
@@ -6,4 +7,6 @@ Putzen::Application.routes.draw do
   resources :areas, path: '', only: [:show]
 
   resources :searches, only: [:new]
+
+  resources :prospects, only: [:create]
 end
