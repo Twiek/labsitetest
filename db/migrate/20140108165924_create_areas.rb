@@ -3,7 +3,6 @@ class CreateAreas < ActiveRecord::Migration
     create_table :areas do |t|
       t.string  :name
       t.string  :url_name
-      t.integer :zip
 
       t.timestamps
     end

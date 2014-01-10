@@ -16,7 +16,7 @@
               .form-group
                 = label_tag :q, "Email", class: "sr-only"
                 = text_field_tag :email, nil, class: "input-xlg input-email input-center form-control", autofocus: "", placeholder: "Ihre Email", type: "email"
-                = hidden_field_tag "zip", @area.zip
+                = hidden_field_tag "area", @area.name
               .form-group.button-center
                 // .form-group is somehow necessary in order for the button to be repsonsive
                 %button.submit{type: "submit"}

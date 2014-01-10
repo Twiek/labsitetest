@@ -2,7 +2,7 @@
 
 class ProspectsController < ApplicationController
   def create
-    @prospect = Prospect.new(email: params[:email], zip: params[:zip])
+    @prospect = Prospect.new(email: params[:email], area: params[:area])
     if @prospect.save
       flash[:notice] = "Besten Dank, wir melden uns sobald wir in Ihrer Gegend
       tätig sind."

@@ -1,3 +1,3 @@
 class Prospect < ActiveRecord::Base
-  attr_accessible :email, :zip
+  attr_accessible :email, :area
 end

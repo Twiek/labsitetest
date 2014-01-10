@@ -1,5 +1,7 @@
 Putzen::Application.routes.draw do
 
+  get "zip_codes/create"
+
   get "welcome/index"
 
   root to: 'welcome#index'
