@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20140109223315) do
   end
 
   create_table "zip_codes", :force => true do |t|
-    t.integer  "zip"
+    t.string   "zip"
     t.integer  "area_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

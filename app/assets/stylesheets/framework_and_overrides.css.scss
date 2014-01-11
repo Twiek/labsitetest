@@ -6,15 +6,8 @@
 @import "font-awesome";
 
 
-//.................
-
-
-
-
-
+// For the right side responsive navbar
 .navbar-side {
-
-  /* Collapsed */
   width: 0;
   overflow: hidden;
   position: fixed;
@@ -36,9 +29,6 @@
   transition: margin 0.3s ease;
 }
 
-
-
-
 .page-wrap-left {
   width: 100%;
   float: left;
@@ -50,7 +40,7 @@
   width: 100%;
 }
 
-//................
+
 
 //Font & Text
 // Increase general font size
@@ -158,7 +148,7 @@ body {
 }
 
 
-// Make the navbar collapse 'earlier'
+// Make the navbar collapse 'earlier' (because the navbar-link pictures are to big...)
 // See: http://stackoverflow.com/a/20249415/409087
 @media (max-width: 991px) {
   .navbar-header {

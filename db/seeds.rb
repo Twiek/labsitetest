@@ -5,3 +5,20 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+# To seed very little zip data in strange format (preliminary)
+CSV.foreach('db/fixtures/zip_seed.csv', col_sep: ';', headers: true) do |row|
+  if row["Zusatz"]
+    row["Zusatz"].gsub!(",", "")
+    row["Zusatz"].gsub!(/^\s/, "")
+    row["Zusatz"].gsub(" ", "_")
+    name = row["Ort"] + "-" + row["Zusatz"]
+    url_name = row["Ort"].downcase + "_" + row["Zusatz"].downcase
+  else
+    name = row["Ort"]
+    url_name = row["Ort"].downcase
+  end
+  area = Area.create(name: name, url_name: url_name)
+  ZipCode.create(zip: row["Plz"], area_id: area.id)
+end
