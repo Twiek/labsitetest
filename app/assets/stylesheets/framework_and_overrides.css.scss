@@ -10,33 +10,33 @@
 
 
 
-@media (max-width: 768px) {
 
-  .navbar-side {
 
-    /* Collapsed */
-    width: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: #333333;
-    z-index: 10;
-    transition: width 0.3s ease;
-  }
+.navbar-side {
 
-  .navbar-side-extend {
-    width: 60%;
-  }
-
-  .navbar-left {
-    margin-left: -60%;
-    width: 100% !important;
-    transition: margin 0.3s ease;
-  }
-
+  /* Collapsed */
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #333333;
+  z-index: 10;
+  transition: width 0.3s ease;
 }
+
+.navbar-side-extend {
+  width: 60%;
+}
+
+.navbar-left {
+  margin-left: -60%;
+  width: 100% !important;
+  transition: margin 0.3s ease;
+}
+
+
 
 
 .page-wrap-left {
@@ -196,7 +196,7 @@ body {
 
 // Hide phone support for larger screens
 @media (min-width: 768px) {
-  .phone-support-header, .navbar-side {
+  .phone-support-header {
     display: none;
     // Why does @extend .text-center; not work here but must be added extra in
     // _navigation.html.haml?
