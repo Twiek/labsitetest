@@ -108,42 +108,42 @@ body {
 // TODO Find better (dryer) solution
 
 .offers-price-image {
-  background:url(angebote_preise.png);
+  background:url(navigation/angebote_preise.png);
   width: 184px;
   height: 30px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(angebote_preise_hover.png);
+    background:url(navigation/angebote_preise_hover.png);
   }
 }
 
 .quality-image {
-  background:url(qualitaet.png);
+  background:url(navigation/qualitaet.png);
   width: 90px;
   height: 30px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(qualitaet_hover.png);
+    background:url(navigation/qualitaet_hover.png);
   }
 }
 
 .team-image {
-  background:url(team.png);
+  background:url(navigation/team.png);
   width: 64px;
   height: 30px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(team_hover.png);
+    background:url(navigation/team_hover.png);
   }
 }
 
 .contact-image {
-  background:url(kontakt.png);
+  background:url(navigation/kontakt.png);
   width: 89px;
   height: 30px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(kontakt_hover.png);
+    background:url(navigation/kontakt_hover.png);
   }
 }
 
