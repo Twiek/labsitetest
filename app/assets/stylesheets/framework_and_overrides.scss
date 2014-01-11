@@ -1,0 +1,98 @@
+// import area specific scss
+@import "_area.scss";
+
+// import the CSS framework
+@import "bootstrap";
+
+// import Font Awesome
+@import "font-awesome";
+
+// import font & text specific scss
+@import "_font_text.scss";
+
+// import footer specific scss
+@import "_footer.scss";
+
+// import font & submit specific scss
+@import "_form_submit.scss";
+
+// import font and text specific scss
+@import "_input.scss";
+
+// import maps specific scss
+@import "_maps.scss";
+
+// import navbar specific scss
+@import "_navbar.scss";
+
+// import welcome specific scss
+@import "_welcome.scss";
+
+
+.header-bottom-padding {
+  padding-bottom: 1em;
+}
+
+
+// Container
+// Full width container
+.container-full-size {
+  width: 100%;
+  padding: 0 15px;
+}
+
+
+// Headings
+// Remove margin that screw with the images
+h1.no-margin {
+  margin-top: 0px;
+}
+
+
+// Buttons
+// For buttons with 2 line
+.button-double-line {
+  font-weight: normal;
+  margin: 0;
+}
+
+
+// Jumbotron
+// Make the top padding smaller for the welcome page
+.jumbotron-submit {
+  padding: 1em 0em 1em 0em !important;
+  max-width: 22em;
+}
+
+
+// Images
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+}
+
+
+// Flash Messages & Alerts
+// To make sure there is no white space below the alerts
+.alert {
+  margin-bottom: 0;
+}
+
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create your own classes
+// to make views framework-neutral
+.column {
+  @extend .col-md-6;
+  @extend .text-center;
+}
+
+
+// apply styles to HTML elements
+// to make views framework-neutral
+
+section {
+  @extend .row;
+  margin-top: 20px;
+}

@@ -8,6 +8,7 @@
 
 
 # To seed very little zip data in strange format (preliminary)
+# TODO Take care of Umlaute
 CSV.foreach('db/fixtures/zip_seed.csv', col_sep: ';', headers: true) do |row|
   if row["Zusatz"]
     row["Zusatz"].gsub!(",", "")
