@@ -6,6 +6,52 @@
 @import "font-awesome";
 
 
+//.................
+
+
+
+@media (max-width: 768px) {
+
+  .navbar-side {
+
+    /* Collapsed */
+    width: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #333333;
+    z-index: 10;
+    transition: width 0.3s ease;
+  }
+
+  .navbar-side-extend {
+    width: 60%;
+  }
+
+  .navbar-left {
+    margin-left: -60%;
+    width: 100% !important;
+    transition: margin 0.3s ease;
+  }
+
+}
+
+
+.page-wrap-left {
+  width: 100%;
+  float: left;
+  margin-left: -60%;
+  transition: margin 0.3s ease;
+}
+
+.page-wrap {
+  width: 100%;
+}
+
+//................
+
 //Font & Text
 // Increase general font size
 body {
@@ -116,7 +162,7 @@ body {
 // See: http://stackoverflow.com/a/20249415/409087
 @media (max-width: 991px) {
   .navbar-header {
-      float: none;
+    float: none;
   }
   .navbar-toggle {
     display: block;
@@ -127,18 +173,18 @@ body {
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   }
   .navbar-collapse.collapse {
-      display: none!important;
+    display: none!important;
   }
   .navbar-nav {
-      float: none!important;
-      margin: 7.5px -15px;
+    float: none!important;
+    margin: 7.5px -15px;
   }
   .navbar-nav>li {
-      float: none;
+    float: none;
   }
   .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -150,7 +196,7 @@ body {
 
 // Hide phone support for larger screens
 @media (min-width: 768px) {
-  .phone-support-header {
+  .phone-support-header, .navbar-side {
     display: none;
     // Why does @extend .text-center; not work here but must be added extra in
     // _navigation.html.haml?

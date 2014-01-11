@@ -17,10 +17,13 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    %header
-      = render 'layouts/messages'
-      = render 'layouts/navigation'
-    %main{:role => "main"}
-      = yield
-      =  render 'layouts/footer'
-    = render 'layouts/olark'
+    %nav.navbar-side
+      = render 'layouts/navigation_links_collapsed'
+    .page-wrap
+      %header
+        = render 'layouts/messages'
+        = render 'layouts/navigation'
+      %main{:role => "main"}
+        = yield
+        =  render 'layouts/footer'
+      = render 'layouts/olark'

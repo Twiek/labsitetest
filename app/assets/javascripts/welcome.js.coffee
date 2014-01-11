@@ -4,4 +4,13 @@
 
 $(document).ready ->
   $(".navbar-toggle").click ->
-    $(".welcome-form").toggle()
+    $(".page-wrap").toggleClass "page-wrap-left"
+    $(".navbar-side").toggleClass "navbar-side-extend"
+    $(".navbar").toggleClass "navbar-left"
+
+  $(".navigation-link-toggle").click ->
+    $(".page-wrap").toggleClass "page-wrap-left"
+    $(".navbar-side").toggleClass "navbar-side-extend"
+    $(".navbar").toggleClass "navbar-left"
+
+
