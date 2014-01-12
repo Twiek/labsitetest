@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -13,9 +14,13 @@ CSV.foreach('db/fixtures/zip_seed.csv', col_sep: ';', headers: true) do |row|
   if row["Zusatz"]
     row["Zusatz"].gsub!(",", "")
     row["Zusatz"].gsub!(/^\s/, "")
-    row["Zusatz"].gsub(" ", "_")
+    row["Zusatz"].gsub!(" ", "_")
     name = row["Ort"] + "-" + row["Zusatz"]
-    url_name = row["Ort"].downcase + "_" + row["Zusatz"].downcase
+    row["Zusatz"].gsub!("ö", "oe")
+    row["Zusatz"].gsub!("ü", "ue")
+    row["Zusatz"].gsub!("ä", "ae")
+    row["Zusatz"].gsub!("ß", "ss")
+    url_name = row["Ort"].downcase + "-" + row["Zusatz"].downcase
   else
     name = row["Ort"]
     url_name = row["Ort"].downcase
