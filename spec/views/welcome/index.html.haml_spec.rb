@@ -1,5 +1,15 @@
 require 'spec_helper'
 
-describe "welcome/index.html.haml" do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe "Welcome Page" do
+
+  subject { page }
+
+  describe "Home Page" do
+    before { visit root_path}
+
+    it "should have a link to the home page" do
+      should have_link(href: root_path)
+    end
+
+  end
 end

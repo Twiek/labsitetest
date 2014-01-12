@@ -16,6 +16,8 @@ end
 
 group :test do
   gem 'capybara'
+  # To make save_and_open_page open page automatically
+  gem "launchy", "~> 2.4.2"
   gem 'factory_girl_rails'
 end
 
