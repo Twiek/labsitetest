@@ -14,7 +14,7 @@ CSV.foreach('db/fixtures/zip_seed.csv', col_sep: ';', headers: true) do |row|
   if row["Zusatz"]
     row["Zusatz"].gsub!(",", "")
     row["Zusatz"].gsub!(/^\s/, "")
-    row["Zusatz"].gsub!(" ", "_")
+    row["Zusatz"].gsub!(" ", "-")
     name = row["Ort"] + "-" + row["Zusatz"]
     row["Zusatz"].gsub!("ö", "oe")
     row["Zusatz"].gsub!("ü", "ue")
