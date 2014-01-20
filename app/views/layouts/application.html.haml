@@ -4,13 +4,8 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %meta{name: "mobile-web-app-capable", content: "yes" }
     %title= content_for?(:title) ? yield(:title) : 'Putzen'
-    / Shortcut Icon for Android
-    %link{ rel: 'shortcut icon', href: image_path('icon/shortcut_icon.png'), type: "image/png" }
-    / Shortcut Icons for  iOS
-    %link{ rel: 'icon/apple-touch-icon', href: image_path('icon/apple-touch-icon-57x57.png'), type: "image/png"  }
-    %link{ rel: 'icon/apple-touch-icon', sizes: '72x72', href: image_path('icon/apple-touch-icon-72x72.png'), type: "image/png"  }
-    %link{ rel: 'icon/apple-touch-icon', sizes: '114x114', href: image_path('icon/apple-touch-icon-114x114.png'), type: "image/png"  }
-    %link{ rel: 'icon/apple-touch-icon', sizes: '144x144', href: image_path('icon/apple-touch-icon-144x144.png'), type: "image/png"  }
+    / Shortcut Icon for Android and iOS
+    %link{ rel: 'apple-touch-icon-precomposed', href: image_path('icon/shortcut_icon.png'), type: "image/png" }
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Putzen'}"}
     = favicon_link_tag "icon/favicon.ico" , :rel => "shortcut icon", :type => "image/x-icon"
     = stylesheet_link_tag "application", media: "all"
