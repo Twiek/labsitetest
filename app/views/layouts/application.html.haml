@@ -5,7 +5,7 @@
     %meta{name: "mobile-web-app-capable", content: "yes" }
     %title= content_for?(:title) ? yield(:title) : 'Putzen'
     / Shortcut Icon for Android
-    %link{href: "icon/shortcut_icon.png", rel: "shortcut icon", sizes: "196x196"}
+    %link{ rel: "shortcut icon", href: image_path('icon/shortcut_icon.png"'), type: "image/png" }
     / Shortcut Icons for  iOS
     %link{ rel: 'icon/apple-touch-icon', href: image_path('icon/apple-touch-icon-57x57.png'), type: "image/png"  }
     %link{ rel: 'icon/apple-touch-icon', sizes: '72x72', href: image_path('icon/apple-touch-icon-72x72.png'), type: "image/png"  }
