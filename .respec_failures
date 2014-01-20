@@ -1,0 +1,5 @@
+./spec/views/welcome/index.html.haml_spec.rb:10
+./spec/controllers/zip_codes_controller_spec.rb:6
+./spec/features/welcome_page_spec.rb:10
+./spec/controllers/welcome_controller_spec.rb:6
+./spec/controllers/prospects_controller_spec.rb:6
