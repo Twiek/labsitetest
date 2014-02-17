@@ -4,14 +4,15 @@ gem 'rails', '3.2.16'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'debugger'
 end
 
 group :development do
   gem 'annotate'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'debugger'
   gem 'rails_layout'
+  gem "respec", "~> 0.5.0"
 end
 
 group :test do
