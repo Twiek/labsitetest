@@ -1,3 +1,5 @@
 == Test Project to learn bootsrap / responsive design
 
 Inspired by homejoy.com etc.
+
+Working status can be seen here http://www.putzen.in
