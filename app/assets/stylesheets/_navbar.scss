@@ -44,7 +44,7 @@
 
 // Make it transparent
 .navbar-transparent {
-  background:transparent;
+  background: transparent;
   // to make sure there is no white background (why does it work this way?)
   position: absolute;
   right: 0;
@@ -63,42 +63,42 @@
 // TODO Find better (dryer) solution
 
 .offers-price-image {
-  background:url(navigation/angebote_preise.png);
-  width: 184px;
-  height: 30px;
+  background:url(navigation/trendreport.png);
+  width: 218px;
+  height: 40px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(navigation/angebote_preise_hover.png);
+    background:url(navigation/trendreport_hover.png);
   }
 }
 
 .quality-image {
-  background:url(navigation/qualitaet.png);
-  width: 90px;
-  height: 30px;
+  background:url(navigation/labtogehter.png);
+  width: 223px;
+  height: 40px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(navigation/qualitaet_hover.png);
+    background:url(navigation/labtogehter_hover.png);
   }
 }
 
 .team-image {
-  background:url(navigation/team.png);
-  width: 64px;
+  background:url(navigation/research.png);
+  width: 162px;
   height: 30px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(navigation/team_hover.png);
+    background:url(navigation/research_hover.png);
   }
 }
 
 .contact-image {
-  background:url(navigation/kontakt.png);
-  width: 89px;
-  height: 30px;
+  background:url(navigation/blog.png);
+  width: 85px;
+  height: 40px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(navigation/kontakt_hover.png);
+    background:url(navigation/blog_hover.png);
   }
 }
 
