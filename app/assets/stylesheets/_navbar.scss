@@ -62,7 +62,7 @@
 // messes up the layout.
 // TODO Find better (dryer) solution
 
-.offers-price-image {
+.trendreport-image {
   background:url(navigation/trendreport.png);
   width: 218px;
   height: 40px;
@@ -72,7 +72,7 @@
   }
 }
 
-.quality-image {
+.labtogether-image {
   background:url(navigation/labtogehter.png);
   width: 223px;
   height: 40px;
@@ -83,22 +83,22 @@
 }
 
 .team-image {
-  background:url(navigation/research.png);
-  width: 162px;
+  background:url(navigation/team.png);
+  width: 95px;
   height: 30px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(navigation/research_hover.png);
+    background:url(navigation/team_hover.png);
   }
 }
 
-.contact-image {
-  background:url(navigation/blog.png);
-  width: 85px;
-  height: 40px;
+.latw-image {
+  background:url(navigation/latw.png);
+  width: 105px;
+  height: 30px;
   margin: 15px 15px 15px 15px;
    &:hover {
-    background:url(navigation/blog_hover.png);
+    background:url(navigation/latw_hover.png);
   }
 }
 

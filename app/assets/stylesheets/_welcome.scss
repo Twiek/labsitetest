@@ -20,12 +20,20 @@
   bottom: 0;
 }
 
-.welcome-form {
-  border-radius: 15px;
-  padding: 1em;
-  background-color: #aac571;
-  max-width: 22em;
-  padding-top: .1em;
+.welcome-about-background {
+  background-color: #aac832;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+
+.welcome-about-text {
+  color: white;
+  font-size: 2.5em;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.welcome-teaser {
+  padding: 15% 15% 15% 5%;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -94,8 +102,18 @@
   }
 }
 
-.welcome-about {
-  padding: 2em 2em 1em 0;
+.about-text {
+  padding: 0em 20% 0 15%;
+}
+
+
+.block-text {
+  padding: 5% 15% 5% 15%;
+}
+
+.video {
+  text-align: center;
+  padding: 1em 0 1em 0;
 }
 
 .welcome-team {
