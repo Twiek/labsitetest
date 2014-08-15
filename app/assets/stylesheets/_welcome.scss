@@ -39,18 +39,12 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .welcome-teaser {
     width: 28em;
-    padding-bottom: 15%;
+    padding: 0% 5% 15% 5%;
     margin: 0px auto;
   }
 }
 
-@media (min-width: 420px) and (max-width: 767px) {
-  .welcome-teaser {
-    padding: 0% 15% 15% 15%;
-  }
-}
-
-@media (max-width: 419px) {
+@media (max-width: 767px) {
   .welcome-teaser {
     padding: 0% 5% 15% 5%;
   }
