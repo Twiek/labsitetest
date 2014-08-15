@@ -2,131 +2,86 @@
   .container.container-full-size
     .row
       .welcome-elements
-        .col-md-6.hidden-xs.hidden-sm.cleaner
-          = image_tag("stock/cleaner.png")
-        .col-md-6.welcome-teaser
-          .welcome-form
-            %h1
-              Jetzt putzen lassen!
-            %ul
-              %li
-                %h4
-                  Guter Grund 1!
-              %li
-                %h4
-                  Guter Grund 2!
-              %li
-                %h4
-                  Guter Grund 3!
-              %li
-                %h4
-                  Guter Grund 4!
-            // Didn't use the shared view (zip_input) because I want autofocus for the first input field
-            // TODO Find a way to still use the shared view
-            = form_tag new_search_path, class: "form-inline", role: "form", method: "get" do
-              .form-group
-                = label_tag :q, "Postleitzahl", class: "sr-only"
-                = text_field_tag :searched_zip, nil,class: "input-xlg input-zip input-center form-control", autofocus: "", placeholder: "Postleitzahl", type: "tel", id: "first-zip-input"
-              .form-group.button-center
-                // .form-group is somehow necessary in order for the button to be repsonsive
-                %button.submit{type: "submit", title: "Termine prüfen"}
-                  Termine prüfen
-                  %br
-                  %h6.button-double-line
-                    In 60 Sekunden buchen
+        .welcome-teaser
+          .welcome-about-background
+            .welcome-about-text
+              Begeben Sie sich mit uns
+
+          .welcome-about-background
+            .welcome-about-text
+              auf die Suche nach dem 'Guten Internet'
 
 .welcome-4c#angebote-preise
   .container.container-full-size
-    .row
-      .col-lg-3
-        .benefits-img
-          = image_tag('icon/gluecklich.png')
-        %h3.heading-4c
-          Einfach
-        .description-4c
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
-      .col-lg-3
-        .benefits-img
-          = image_tag('icon/sicher.png')
-        %h3.heading-4c
-          Sicher
-        .description-4c
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
-      .col-lg-3
-        .benefits-img
-          = image_tag('icon/reinigungsmittel.png')
-        %h3.heading-4c
-          Bequem
-        .description-4c
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
-      .col-lg-3
-        .benefits-img
-          = image_tag('icon/euro.png')
-        %h3.heading-4c
-          Preiswert
-        .description-4c
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
-    .welcome-submit
-      .submit-green.jumbotron.jumbotron-submit.align-center
-        = render 'shared/zip_input'
+    %h1.align-center
+      Wer wir sind
+    .about-text
+      Das betterplace lab erforscht digitale Innovationen, damit Menschen, Organisationen und Unternehmen, die im sozialen Sektor arbeiten, noch mehr Gutes bewirken können.
+      %p.video
+        %iframe{allowfullscreen: "", frameborder: "0", height: "281", mozallowfullscreen: "", src: "//player.vimeo.com/video/12986029", webkitallowfullscreen: "", width: "500"}
+      %p
+        Wir sind Teil der gut.org gAG und tragen als Vorreiter für digital-soziale Themen zu deren Kompetenz und Reputation bei.
 
-.welcome-green#qualitaet
-  .welcome-2c
-    .container
+.welcome-green#trendreport
+  .container.full-size
+    .col-lg-6.no-padding
+      = image_tag('trendreport.jpg')
+    .col-lg-6.description-2c
       %h1.align-center
-        Wir putzen gründlich
-      .row
-        .col-lg-6
-          = image_tag('stock/putzkraefte.png')
-        .col-lg-6.description-2c
-          Unsere Reinigungkräfte befolgen sind mit einer Checkliste mit über 50
-          Punken ausgestattet um sicher zu gehen, dass nichts vergessen wird und
-          Sie stets zufrieden sind. Unter anderem saugen und wischen wir alle
-          Böden, reinigen Waschbecken, Duschen und Badewannen, bringen den Müll
-          raus und sind insgesamt ziemlich toll!
-      .welcome-submit
-        .jumbotron.jumbotron-submit.align-center
-          = render 'shared/zip_input'
+        Der Trendreport
+      .block-text
+        Der Trendreport ist das Herzstück der digital-sozialen Arbeit im betterplace lab. An über 500 Beispielen zeigen wir, wie digitale Innovationen (Mobilfunk-Dienste, Webseiten, etc.) schon heute den sozialen Sektor verbessern. Daraus leiten wird Trends ab und schreiben tiefer gehende Analysen (Insights). Trendinteressierte infomieren wir übrigens auch mit den zweiwöchentlichen labnews.
+
+
+#labtogether
+  .container.full-size
+    .col-lg-6.description-2c
+      %h1.align-center
+        Labtogether
+      .block-text
+        Das betterplace labtogether ist unsere jährliche Konferenz. Unter dem Motto "Digital für Sozial - Wie Online-Trends gesellschaftliches Engagement erneuern" treffen sich seit 2012 Experten und Interessierte zum Austausch und Weiterdenken. Alle Vorträge archivieren wir auch als Videos. Das dritte labtogether findet am 6. November 2014 statt.
+    .col-lg-6.no-padding
+      = image_tag('labtogether.jpg')
+
+.welcome-green#latw
+  .container.full-size
+    .col-lg-6.no-padding
+      = image_tag('latw.jpg')
+    .col-lg-6.description-2c
+      %h1.align-center
+        Lab around the world
+      .block-text
+        Das lab ist weg. Auf unserer weltweiten Forschungsreise wollen wir rausfinden, wie das Internet soziale Ideen voran bringt. Damit wir einen globalen Blick bekommen und mal aus der Vogelperspektive das Thema digital-sozial beobachten können schicken wir zehn Forscher in 14 Länder. Die ersten sind bereits unterwegs.
 
 .welcome-4c.welcome-team#team
-  .container.container-full-size
+  .container.full-size.full-size-padding
     %h1.align-center.header-bottom-padding
       Team
     .row
       .col-lg-3
-        .img-circle
-          = image_tag('team/this_could_be_you.jpg', class: "img-circle")
+        = image_tag('team/Joana.jpg')
         %h3.heading-4c
-          CEO
+          Laboss
         .description-4c
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
+          Joana Breidenbach ist promovierte Kulturanthropologin und Autorin zahlreicher Bücher zu den kulturellen Folgen der Globalisierung, Migration und Tourismus. Etwa: Tanz der Kulturen (Rowohlt 2000), Maxikulti (Campus 2008) und Seeing Culture Everywhere (Washington Press 2009). Joana Breidenbach ist Mitgründerin von betterplace.org und leitet das betterplace lab.
       .col-lg-3
-        .img-circle
-          .img-circle
-            = image_tag('team/this_could_be_you.jpg', class: "img-circle")
+        = image_tag('team/Medje.jpg')
         %h3.heading-4c
-          CFO
+          Innenministerin
         .description-4c
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
+          Medje Prahm ist Mistress of Arts in Philosophy & Economics und hat sich vor dem lab auf die Frage konzentriert, wie Nonprofit-Organisationen lernen und ihre Wirkung verbessern können. Dazu hat die 30-Jährige bereits für die stiftung neue verantwortung eine Wirkungsanalyse konzipiert und pilotiert. Medje hält als Innenministerin des betterplace lab die verzweigte Netzwerkorganisation zusammen und unterstützt Joana bei der Leitung.
       .col-lg-3
-        .img-circle
-          .img-circle
-            = image_tag('team/this_could_be_you.jpg', class: "img-circle")
+        = image_tag('team/kathleen.jpg')
         %h3.heading-4c
-          CMO
+          Trendministerin
         .description-4c
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
+          Kathleen Ziemann ist Kulturwissenschaftlerin und hat unter dem Titel Platt 2.0 ihre Masterarbeit über Minderheitensprachen auf Facebook geschrieben. Bisher hat Kathleen als Referentin für Öffentlichkeitsarbeit bei Ärzte ohne Grenzen und im Landtag Brandenburg gearbeitet. Seit Juli 2012 ist die 30-Jährige Design Thinkerin des HPI Potsdam.
       .col-lg-3
-        .img-circle
-          = image_tag('team/sebastian_schwiecker.jpg' , class: "img-circle")
+        = image_tag('team/Dennis.jpg')
         %h3.heading-4c
-          CTO (Gott bewahre...)
+          Schweineminister
         .description-4c
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. St
-    .welcome-submit
-      .submit-green.jumbotron.jumbotron-submit.align-center
-        = render 'shared/zip_input'
-
+          Dennis Buchmann ist Diplom-Biologe, Master of Public Policy und Absolvent der Deutschen Journalistenschule. Er hat das Magazin Humanglobaler Zufall erfunden und als Chefredakteur geleitet. Im betterplace lab ist Dennis seit drei Jahren Kreativredakteur und arbeitet bei uns redaktionell sowie konzeptionell. Seit 2011 gibt er mit MeinekleineFarm.org außerdem Fleisch ein Gesicht.
 
 .welcome-green#kontakt
   .welcome-2c
@@ -136,99 +91,19 @@
       .row
         .col-lg-6
           .google-maps
-            <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x47a85063ebd5027b%3A0x15ee2ba2a23306d0!2sBruchsaler+Stra%C3%9Fe+4%2C+10715+Berlin%2C+Deutschland!5e0!3m2!1sde!2s!4v1388945747112" width="300" height="300" frameborder="0" style="border:0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2428.9136162859936!2d13.447106812686847!3d52.49880325813063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e539992ebb3%3A0xa79a32578cb4a195!2sSchlesische+Stra%C3%9Fe+26%2C+10997+Berlin!5e0!3m2!1sde!2sde!4v1408110081246" width="600" height="450" frameborder="0" style="border:0"></iframe>
         .col-lg-6.description-2c
           %h3
             Anschrift:
           %p
-            Bruchsaler Straße 4
-            10715 Berlin
+            Schlesische Straße 26
+            10997 Berlin
           %h3
             Telefon:
           %p
-            (030) 123 123 123
+            +49 (0)30 76 76 44 88 - 0
           %h3
             Email:
           %p
-            %a{href: "mailto:testphase@putzen.in?Subject=Ich%20will%20mitmachen", target: "_top"}
-              testphase@putzen.in
-      .welcome-submit
-        .jumbotron.jumbotron-submit.align-center
-          = render 'shared/zip_input'
-
-.welcome-2c
-  .container
-    %h1.align-center
-      Wo wir tätig sind
-    .row
-      .col-lg-4.col-lg-offset-2
-        %h3
-          Berlin
-        %ul
-          %li
-            = link_to 'Berlin-Charlottenburg', root_path
-          %li
-            = link_to 'Berlin-Friedrichshain', root_path
-          %li
-            = link_to 'Berlin-Hellersdorf', root_path
-          %li
-            = link_to 'Berlin-Hohenschönhausen', root_path
-          %li
-            = link_to 'Berlin-Kreuzberg', root_path
-          %li
-            = link_to 'Berlin-Köpenick', root_path
-          %li
-            = link_to 'Berlin-Lichtenberg', root_path
-          %li
-            = link_to 'Berlin-Marzahn', root_path
-          %li
-            = link_to 'Berlin-Mitte', root_path
-          %li
-            = link_to 'Berlin-Neukölln', root_path
-          %li
-            = link_to 'Berlin-Pankow', root_path
-          %li
-            = link_to 'Berlin-Prenzlauer Berg', root_path
-          %li
-            = link_to 'Berlin-Reinickendorf', root_path
-          %li
-            = link_to 'Berlin-Schöneberg', root_path
-          %li
-            = link_to 'Berlin-Spandau', root_path
-          %li
-            = link_to 'Berlin-Steglitz', root_path
-          %li
-            = link_to 'Berlin-Tempelhof', root_path
-          %li
-            = link_to 'Berlin-Tiergarten', root_path
-          %li
-            = link_to 'Berlin-Treptow', root_path
-          %li
-            = link_to 'Berlin-Wedding', root_path
-          %li
-            = link_to 'Berlin-Weißensee', root_path
-          %li
-            = link_to 'Berlin-Wilmersdorf', root_path
-          %li
-            = link_to 'Berlin-Zehlendorf', root_path
-      .col-lg-4.col-lg-offset-2
-        %h3
-          Hamburg
-        %ul
-          %li
-            = link_to 'Hamburg-Altona', root_path
-          %li
-            = link_to 'Hamburg-Bergedorf', root_path
-          %li
-            = link_to 'Hamburg-Eimsbüttel', root_path
-          %li
-            = link_to 'Hamburg-Mitte', root_path
-          %li
-            = link_to 'Hamburg-Nord', root_path
-          %li
-            = link_to 'Hamburg-Harburg', root_path
-          %li
-            = link_to 'Hamburg-Wandsbek', root_path
-    .welcome-submit
-      .submit-green.jumbotron.jumbotron-submit.align-center
-        = render 'shared/zip_input'
+            %a{href: "mailto:change@betterplace.org", target: "_top"}
+              change@betterplace.org
